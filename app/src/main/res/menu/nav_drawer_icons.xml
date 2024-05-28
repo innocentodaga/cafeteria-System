@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+<item android:id="@+id/cartlist"
+    android:title="Cart List"
+    android:icon="@drawable/baseline_shopping_cart_checkout_24"
+    />
+    <item android:id="@+id/events"
+        android:title="Events"
+        android:icon="@drawable/baseline_event_24"
+        />
+    <item android:id="@+id/history"
+        android:title="History"
+        android:icon="@drawable/baseline_history_24"
+        />
+
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/baseline_settings_24"
+        />
+    <item android:id="@+id/aboutus"
+        android:title="About Us"
+        android:icon="@drawable/baseline_admin_panel_settings_24"
+        />
+    <item android:id="@+id/line"
+        android:title=""
+        />
+    <item android:id="@+id/logout"
+        android:title="Log Out"
+        android:icon="@drawable/baseline_logout_24"
+        />
+
+
+</menu>

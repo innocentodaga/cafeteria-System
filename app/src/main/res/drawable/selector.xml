@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:color="@color/call_to_action"
+        android:state_selected="false"/>
+
+    <item
+        android:color="#00BCD4"
+        android:state_selected="true"
+        />
+</selector>

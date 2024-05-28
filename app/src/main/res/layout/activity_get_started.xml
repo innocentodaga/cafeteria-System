@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF6347"
+    tools:context=".GetStarted">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cafeteria Management System"
+                android:textSize="30sp"
+                android:textColor="@color/secondary"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cafe"
+                android:id="@+id/logo"
+                android:layout_marginTop="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/app_name"
+                />
+            <TextView
+                android:id="@+id/developers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developers"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_below="@id/logo"
+                android:layout_centerHorizontal="true"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/developers"
+                android:id="@+id/images"
+                android:layout_marginTop="20dp"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ty"
+                    app:civ_border_color="#29FD03"
+                    app:civ_border_width=".5dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image2"
+                    android:layout_width="70dp"
+                    android:layout_toRightOf="@id/profile_image1"
+                    android:layout_height="70dp"
+                    android:src="@drawable/merci"
+                    android:layout_weight="1"
+                    app:civ_border_width=".5dp"
+                    android:layout_alignParentRight="true"
+                    app:civ_border_color="#29FD03"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/names"
+                android:layout_margin="8dp"
+                android:layout_below="@id/images"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Innocent Odaga\n21/U/3158/GCS/PS"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/secondary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Awacango Mercy\n21/U/0307/GIT/PS"
+                    android:textColor="@color/secondary"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/get_started"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Get Started"
+                android:layout_below="@id/names"
+                android:layout_marginTop="80dp"
+                android:textColor="@color/white"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@drawable/input_login_bg"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#6E008C"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

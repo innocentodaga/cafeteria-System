@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/burgerbg"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cafe"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".AboutUs"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Settings"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".NewPassword"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ProfilePic"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".NewlyAdded"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".OrderNow"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".History"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Cartlist"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Events"
+            android:exported="false"
+            android:label="@string/title_activity_events"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Favourites"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ResetPassword"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".GetStarted"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Spalsh"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Login"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+
+    </application>
+
+</manifest>
